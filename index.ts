@@ -1,11 +1,15 @@
+//importamos a classe veiculo
 import { Veiculo } from "./Veiculo";
 import prompt from "prompt-sync";
 
+//atalho para abrir prompt
 const teclado = prompt();
 
+//criamos o veicuolo
 console.log('Criação de veículo');
 const carro: Veiculo = criaVeiculo();
 
+//menu de opções de ações. Aqui ficam os cases
 while(true){
     console.log("########### MENU ###########");
     console.log("1 - Acelerar");
@@ -29,14 +33,19 @@ while(true){
     }
 }
 
+
 console.table(carro);
 
+
+// função acelarar do carro 
 function acelerar(veiculo: Veiculo): void{
     if(veiculo.marchaAtual != 0){
     veiculo.velocidade += veiculo.potencia*0.1;
     console.log(veiculo.velocidade);
 }}
 
+
+//função de criar o veiculo
 function criaVeiculo(): Veiculo{
     const veiculo: Veiculo = new Veiculo();
     veiculo.marca = teclado('Marca: ');

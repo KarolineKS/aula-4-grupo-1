@@ -1,3 +1,5 @@
+//Aqui ficam a classe veículo com o seus atributos.
+
 export class Veiculo{
     marca: string = 'Padrão';
     modelo: string = 'Padrão';
