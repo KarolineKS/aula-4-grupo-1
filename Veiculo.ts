@@ -7,4 +7,5 @@ export class Veiculo{
     numeroMarchas: number = 5;
     marchaAtual: number = 0;
     velocidade: number = 0;
+    airbag: string = "Frente";
 }
