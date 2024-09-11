@@ -5,7 +5,7 @@ import prompt from "prompt-sync";
 //atalho para abrir prompt
 const teclado = prompt();
 
-//criamos o veicuolo
+//criamos o veiculo
 console.log('Criação de veículo');
 const carro: Veiculo = criaVeiculo();
 
@@ -42,7 +42,7 @@ while(true){
 console.table(carro);
 
 
-// função acelarar do carro 
+// função acelerar do carro 
 function acelerar(veiculo: Veiculo): void{
     if(veiculo.marchaAtual != 0){
     veiculo.velocidade += veiculo.potencia*0.1;
